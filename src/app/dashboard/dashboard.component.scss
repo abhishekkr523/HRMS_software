@@ -1,0 +1,102 @@
+.main {
+  overflow: hidden;
+  // scroll
+  .sidebar {
+    overflow-x: auto;
+    height: 100vh;
+    width: 18%;
+    span {
+      width: 35px;
+      height: 35px;
+      border-radius: 10px;
+      background: #ffffff;
+      color: rgb(113, 108, 108);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+    }
+    span:hover {
+      color: #912b87;
+    }
+    .brand {
+      height: 115px;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 500;
+      flex-direction: column;
+      padding: 10px 15px;
+      color: rgb(94, 91, 91);
+    }
+    .side-section {
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      height: 52px;
+      margin:10px 0px 10px
+    }
+    .side-section:hover {
+      background-color: #912b87;
+      color: #ffffff;
+    }
+    h2 {
+      margin: 0;
+    }
+    .accordion-button {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .content {
+    height: 100vh;
+    width: 82%;
+    .header {
+      .header-left {
+        i {
+            color: #912b87;
+            margin: 0px 20px 0px 5px;
+            font-size: 19px;
+          }
+        .dropdown {
+          ul {
+            padding: 15px 0px;
+            box-shadow: 0 4px 24px 0 rgba(62, 57, 107, 0.18);
+            border: none;
+          }
+        }
+      }
+      .header-right {
+        i {
+          color: #912b87;
+          margin: 0px 10px 0px 10px;
+          font-size: 19px;
+        }
+        .dropdown {
+            ul {
+              padding: 15px 0px;
+              box-shadow: 0 4px 24px 0 rgba(62, 57, 107, 0.18);
+              border: none;
+            }
+          }
+        button {
+          .badge {
+            margin-left: -19px;
+            //     width: 4px;
+            //     height: 4px;
+          }
+        }
+      }
+    }
+  }
+  .sidebar.collapsed {
+    transform: translateX(-100%);
+  }
+}

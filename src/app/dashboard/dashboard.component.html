@@ -1,0 +1,169 @@
+<div class="container-fluid w-100 h-100 bg-light main d-flex">
+  <div class="sidebar text-dark bg-light">
+    <div class="brand"><strong>Hrms</strong><strong>Prototype</strong></div>
+    <div class="side-section" routerLink="home"><span><i class="fa-solid fa-house"></i></span> Dashboard</div>
+    <div class="side-section" routerLink="employee"> <span><i class="fa-regular fa-user"></i></span>Employee</div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item bg-transparent" style="border: none">
+        <h2 class="accordion-header side-section">
+          <button
+            class="accordion-button bg-transparent collapsed"
+            style="
+              box-shadow: none;
+              border: none;
+              font-size: 15px;
+              font-weight: 500;
+            "
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="false"
+            aria-controls="collapseOne"
+          >
+            <span><i class="fa-solid fa-receipt"></i></span>Payroll
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="side-section">Salary</div>
+          <div class="side-section">Payslip</div>
+        </div>
+      </div>
+      <div class="accordion-item bg-transparent" style="border: none">
+        <h2 class="accordion-header side-section">
+          <button
+            class="accordion-button bg-transparent collapsed"
+            style="box-shadow: none; font-size: 15px; font-weight: 500"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            <span><i class="fa-regular fa-clock"></i></span>TimeSheet
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="side-section">Time Sheet</div>
+          <div class="side-section">Manage Leave</div>
+          <div class="side-section">Attendence</div>
+        </div>
+      </div>
+      <div class="accordion-item bg-transparent" style="border: none">
+        <h2 class="accordion-header side-section">
+          <button
+            class="accordion-button bg-transparent collapsed"
+            style="box-shadow: none; font-size: 15px; font-weight: 500"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            <span><i class="fa-solid fa-user-plus"></i></span>HR Admin Setup
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="side-section" routerLink="">Award</div>
+          <div class="side-section" routerLink="">Transfer</div>
+          <div class="side-section" routerLink="">Registration</div>
+          <div class="side-section" routerLink="">Trip</div>
+          <div class="side-section" routerLink="">Promotion</div>
+          <div class="side-section" routerLink="">Warning</div>
+          <div class="side-section" routerLink="">complaints</div>
+          <div class="side-section" routerLink="">Termination</div>
+          <div class="side-section" routerLink="">Announcement</div>
+          <div class="side-section" routerLink="">Holiday</div>
+        </div>
+      </div>
+    </div>
+    <div class="side-section" routerLink="contracts"><span><i class="fa-solid fa-file-contract"></i></span>Contract</div>
+    <div class="side-section" routerLink="ticket"><span><i class="fa-solid fa-ticket"></i></span> Ticket</div>
+    <div class="side-section" routerLink="event"><span><i class="fa-regular fa-calendar-days"></i></span>Events</div>
+    <div class="side-section" routerLink="meeting"><span><i class="fa-solid fa-calendar-week"></i></span>Meeting</div>
+    <div class="side-section" routerLink="zoom-meeting"><span><i class="fa-solid fa-video"></i></span>Zoom Meeting</div>
+    <div class="side-section" routerLink="document"><span><i class="fa-regular fa-file"></i></span>Documents</div>
+    <div class="side-section" routerLink="messenger"><span><i class="fa-brands fa-facebook-messenger"></i></span>messenger</div>
+  </div>
+
+  <div class="content bg-light">
+    <div
+      class="header d-flex justify-content-between align-items-center bg-primary"
+      style="height: 90px"
+    >
+      <div class="header-left">
+        <div class="dropdown">
+          <img src="" alt="img" />
+          <a
+            class="btn dropdown-toggle text-dark"
+            style="background-color: rgb(241, 239, 239)"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Hi, Abhishek Kumar
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-user"></i></span>My profile</a></li>
+            <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-right-to-bracket"></i></span>Log Out</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-right d-flex">
+        <button type="button" class="btn position-relative">
+          <i class="fa-regular fa-comment-dots header-icon"></i>
+          <span
+            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 8px;"
+          >
+            0
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </button>
+        <button type="button" class="btn position-relative">
+          <i class="fa-regular fa-message header-icon"></i>
+          <span
+            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+            style="font-size: 8px;"
+          >
+            0
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </button>
+        <div class="dropdown">
+            <span><i class="fa-solid fa-globe header-icon" style="color: rgb(199, 196, 196);"></i></span>
+          <a
+            class="btn dropdown-toggle text-dark"
+            style="background-color: rgb(241, 239, 239)"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            English
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Arabic</a></li>
+            <li><a class="dropdown-item" href="#">Chinese</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="pages">
+        <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
