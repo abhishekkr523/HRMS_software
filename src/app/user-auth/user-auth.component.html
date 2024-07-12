@@ -1,0 +1,99 @@
+<div class="main">
+    <div class="left-container"></div>
+    <div class="right-container"></div>
+    <mat-card appearance="outlined" class="header py-60">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark w-100"
+        style="position: absolute; z-index: 800"
+      >
+        <div>
+          <mat-card-content>Hrms</mat-card-content>
+          <mat-card-content>Prototype</mat-card-content>
+        </div>
+        <div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDarkDropdown"
+            aria-controls="navbarNavDarkDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  English
+                </button>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </mat-card>
+  
+    <form [formGroup]="userForm" (ngSubmit)="userauth()" class="example-card p-4">
+      <div class="mb-3 fs-3 login">Login</div>
+      <small>note:email and password is user&#64;gmail.com and user</small>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label email">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          placeholder="Enter your email"
+          name="email"
+          formControlName="email"
+          
+        />
+        <div *ngIf="userForm.controls['email'].invalid && (userForm.controls['email'].dirty || userForm.controls['email'].touched)" class="form-text text-danger">
+          <div *ngIf="userForm.controls['email'].errors?.['required']">Email is required.</div>
+          <div *ngIf="userForm.controls['email'].errors?.['email']">Invalid email address.</div>
+        </div>
+        <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label password"
+          >Password</label
+        >
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+          placeholder="Password"
+          name="password"
+          formControlName="password"
+        />
+        <div *ngIf="userForm.controls['password'].invalid && (userForm.controls['password'].dirty || userForm.controls['password'].touched)" class="form-text text-danger">
+          <div *ngIf="userForm.controls['password'].errors?.['required']">Password is required.</div>
+          <div *ngIf="userForm.controls['password'].errors?.['minlength']">Password must be at least 4 characters long.</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label forgot">Forgot Your Password?</label>
+      </div>
+      <re-captcha
+        (resolved)="resolved($event)"
+        siteKey="6LdJOwkqAAAAAB6CurKyHEHGq3lAbCCbAAUrxnSB"
+      ></re-captcha>
+      <button type="submit" class="btn w-100 mt-4 login-btn">Login</button>
+    </form>
+    <label for="" class="footer"> HRMS | hrmsPrototype pvt ltd</label>
+  </div>

@@ -99,4 +99,8 @@
   .sidebar.collapsed {
     transform: translateX(-100%);
   }
+
+  .content{
+    overflow-x:auto;
+  }
 }

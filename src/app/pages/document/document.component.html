@@ -1,1 +1,13 @@
 <p>document works!</p>
+<div>
+    <button (click)="emitdata()">Emit Data</button>
+    <button (click)="getData()">Get Data</button>
+  </div>
+  
+  <div>
+    <p>Emitted Data:</p>
+    <ul>
+      <li *ngFor="let data of myData">{{ data }}</li>
+    </ul>
+  </div>
+  

@@ -1,4 +1,39 @@
+
+.main{
+    // overflow-x: auto;
+}
 .demo-inline-calendar-card {
-    width: 300px;
+    width: 550px;
   }
   
+  mat-card{
+    box-shadow: 0 4px 24px 0 rgba(62, 57, 107, 0.18);
+    border-radius: 10px;
+    border: none;
+  }
+  .attandance{
+    height: 220px;
+    box-shadow: 0 4px 24px 0 rgba(62, 57, 107, 0.18);
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 28px;
+    padding: 30px;
+    span{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .clock-btn{
+        padding: 9px;
+        width: 118px;
+    }
+  }
+  .schedule{
+    height: 490px;
+    box-shadow: 0 4px 24px 0 rgba(62, 57, 107, 0.18);
+    border-radius: 10px;
+    border: none;
+    span{
+      font-size: 18px;
+      font-weight: 500;
+  }
+  }

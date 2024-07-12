@@ -8,11 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'hrms_clone';
 
-  resolved(captchaResponse: string | null) {
-    if (captchaResponse) {
-      console.log(`Resolved captcha with response: ${captchaResponse}`);
-    } else {
-      console.log('Captcha response is null');
-    }
-  }
+  
 }

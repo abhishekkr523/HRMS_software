@@ -18,6 +18,9 @@ import { DocumentComponent } from './pages/document/document.component';
 import { MessengerComponent } from './pages/messenger/messenger.component';
 import {provideNativeDateAdapter} from '@angular/material/core';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { UserAuthComponent } from './user-auth/user-auth.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MeetingComponent,
     ZoomMeetingComponent,
     DocumentComponent,
-    MessengerComponent
+    MessengerComponent,
+    UserAuthComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +43,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatCardModule,
     RecaptchaModule,
     MatDatepickerModule,
+    FormsModule,
+    ReactiveFormsModule
     
   ],
   providers: [

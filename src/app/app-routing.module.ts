@@ -10,9 +10,11 @@ import { MeetingComponent } from './pages/meeting/meeting.component';
 import { MessengerComponent } from './pages/messenger/messenger.component';
 import { TicketComponent } from './pages/ticket/ticket.component';
 import { ZoomMeetingComponent } from './pages/zoom-meeting/zoom-meeting.component';
+import { UserAuthComponent } from './user-auth/user-auth.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/user-auth', pathMatch: 'full' },
+  { path: 'user-auth', component: UserAuthComponent},
   {
     path: 'dashboard',
     component: DashboardComponent,

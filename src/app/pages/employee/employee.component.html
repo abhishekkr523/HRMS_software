@@ -1,1 +1,55 @@
-<p>employee works!</p>
+<!-- src/app/rxjs-demo/rxjs-demo.component.html -->
+
+<div>
+    <h2>RxJS Operator Demos</h2>
+  
+    <h3>Map Operator</h3>
+    <div *ngFor="let result of mapResult">
+      {{ result }}
+    </div>
+  
+    <h3>Filter Operator</h3>
+    <div *ngFor="let result of filterResult">
+      {{ result }}
+    </div>
+  
+    <h3>MergeMap Operator</h3>
+    <div *ngFor="let result of higherOrderMergeMapResult">
+      {{ result }}
+    </div>
+  
+    <h3>ConcatMap Operator</h3>
+    <div *ngFor="let result of higherOrderConcatMapResult">
+      {{ result }}
+    </div>
+  
+    <h3>SwitchMap Operator</h3>
+    <div *ngFor="let result of higherOrderSwitchMapResult">
+      {{ result }}
+    </div>
+  </div>
+
+
+
+  <!-- src/app/error-handling-demo/error-handling-demo.component.html -->
+
+<div>
+    <h2>RxJS Error Handling Demos</h2>
+  
+    <h3>catchError Operator</h3>
+    <div *ngFor="let result of catchErrorResult">
+      {{ result }}
+    </div>
+  
+    <h3>retry Operator</h3>
+    <div *ngFor="let result of retryResult">
+      {{ result }}
+    </div>
+  
+    <h3>retryWhen Operator</h3>
+    <div *ngFor="let result of retryWhenResult">
+      {{ result }}
+    </div>
+  </div>
+  
+  

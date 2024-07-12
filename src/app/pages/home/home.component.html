@@ -1,6 +1,37 @@
-<mat-card class="demo-inline-calendar-card">
-    <mat-calendar [(selected)]="selected"></mat-calendar>
-  </mat-card>
-  <p>Selected date: {{selected()}}</p>
-  
-  lknbkbj n
+<div class="main d-flex row p-4">
+  <div class="left-cont col-6 bg-light">
+    <div class="calender d-flex justify-content-center align-items-center">
+      <mat-card class="demo-inline-calendar-card">
+        <mat-calendar [(selected)]="selected"></mat-calendar>
+      </mat-card>
+    </div>
+  </div>
+  <div class="right-cont col-6 ">
+    <div class="attandance w-100  bg-light">
+      <span>Mark attandance</span>
+      <p>My Office Time: 10:00 to 19:00</p>
+      <div class="clock row">
+        <div class="in col-6">
+            <button type="button" class="btn clock-btn " style="background-color: #912b87;">CLOCK IN</button>
+        </div>
+        <div class="out col-6">
+            <button ctype="button" class="btn clock-btn " style="background-color: #ff3a6e;">CLOCK OUT</button>
+        </div>
+      </div> 
+    </div>
+    <div class="schedule bg-light p-4">
+      <span> Meeting Schedule</span>
+      <div class="row">
+        <div class="col-4">
+          <h5>MEETING TITLE</h5>
+        </div>
+        <div class="col-4">
+          <h5>MEETING TIme</h5>
+        </div>
+        <div class="col-4">
+          <h5>MEETING DATE</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
