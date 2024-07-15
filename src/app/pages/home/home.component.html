@@ -2,36 +2,78 @@
   <div class="left-cont col-6 bg-light">
     <div class="calender d-flex justify-content-center align-items-center">
       <mat-card class="demo-inline-calendar-card">
+        <div
+          class="card-header border-0 d-flex align-items-center justify-content-between"
+        >
+          <span>Calendar</span>
+          <select
+            class="form-select"
+            style="width: 150px; margin-right: 40px ;box-shadow: 0 4px 24px 0 rgba(190, 71, 181, 0.18);
+            border: none;"
+            aria-label="Default select example"
+          >
+            <option style="border: none;" selected>Local Calendar</option>
+            <option style="border: none;" value="1">Local Calendar</option>
+            <option style="border: none;" value="2">Gogle Calendar</option>
+          </select>
+        </div>
         <mat-calendar [(selected)]="selected"></mat-calendar>
       </mat-card>
     </div>
   </div>
-  <div class="right-cont col-6 ">
-    <div class="attandance w-100  bg-light">
-      <span>Mark attandance</span>
+  <div class="right-cont col-6">
+    <div class="attandance w-100 bg-light">
+      <span class="card-header">Mark attandance</span>
       <p>My Office Time: 10:00 to 19:00</p>
       <div class="clock row">
         <div class="in col-6">
-            <button type="button" class="btn clock-btn " style="background-color: #912b87;">CLOCK IN</button>
+          <button
+            type="button"
+            class="btn clock-btn"
+            style="background-color: #912b87"
+          >
+            CLOCK IN
+          </button>
         </div>
         <div class="out col-6">
-            <button ctype="button" class="btn clock-btn " style="background-color: #ff3a6e;">CLOCK OUT</button>
-        </div>
-      </div> 
-    </div>
-    <div class="schedule bg-light p-4">
-      <span> Meeting Schedule</span>
-      <div class="row">
-        <div class="col-4">
-          <h5>MEETING TITLE</h5>
-        </div>
-        <div class="col-4">
-          <h5>MEETING TIme</h5>
-        </div>
-        <div class="col-4">
-          <h5>MEETING DATE</h5>
+          <button
+            ctype="button"
+            class="btn clock-btn"
+            style="background-color: #ff3a6e"
+          >
+            CLOCK OUT
+          </button>
         </div>
       </div>
+    </div>
+    <div class="card schedule border-0">
+      <div class="card-header border-0">Meeting schedule</div>
+      <div class="card-body border-0 p-0">
+        <table class="table border-0">
+          <thead class="border-0">
+            <tr class="border-0">
+              <th scope="col">MEETING TITLE</th>
+              <th scope="col">MEETING DATE</th>
+              <th scope="col">MEETING TIME</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="card border-0 buttom-cont">
+    <div class="card-header border-0">Announcement List</div>
+    <div class="card-body p-0 border-0">
+      <table class="table border-0">
+        <thead class="border-0">
+          <tr class="border-0">
+            <th scope="col">TITLE</th>
+            <th scope="col">START DATE</th>
+            <th scope="col">END DATE</th>
+            <th scope="col">DESCRIPTION</th>
+          </tr>
+        </thead>
+      </table>
     </div>
   </div>
 </div>

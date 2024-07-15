@@ -1,39 +1,68 @@
-
-.main{
-    // overflow-x: auto;
+.main {
+  // overflow-x: auto;
 }
 .demo-inline-calendar-card {
-    width: 550px;
+  width: 550px;
+  .card-header {
+    font-size: 18px;
+    padding: 25px 0px 15px 29px;
   }
+}
+
+mat-card {
+  box-shadow: 0 4px 24px 0 rgba(62, 57, 107, 0.18);
+  border-radius: 10px;
+  border: none;
+}
+.attandance {
+  height: 220px;
+  box-shadow: 0 4px 24px 0 rgba(62, 57, 107, 0.18);
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 28px;
+  padding: 30px;
+  span {
+    font-size: 18px;
+    // font-weight: 500;
+  }
+  .clock-btn {
+    padding: 9px;
+    width: 118px;
+  }
+}
+.schedule {
+  height: 490px;
+  box-shadow: 0 4px 24px 0 rgba(62, 57, 107, 0.18);
+  border-radius: 10px;
+  border: none;
+  padding: 0px 15px 0px 24px;
+  .card-header {
+    font-size: 18px;
+    padding: 25px 0px 15px 0px;
+  }
+  th {
+    color: rgb(81, 77, 77) !important;
+    border: none;
+    padding: 20px 0px 20px 0px;
+    background-color: rgb(245, 245, 245);
+  }
+}
+.buttom-cont {
+  box-shadow: 0 4px 24px 0 rgba(62, 57, 107, 0.18);
+  border-radius: 10px;
+  margin-top: 30px;
+  .card-header {
+    font-size: 18px;
+    padding: 25px 0px 15px 0px;
+  }
+  th {
+    color: rgb(81, 77, 77) !important;
+    border: none;
+    padding: 20px 0px 20px 0px;
+    background-color: rgb(245, 245, 245);
+  }
+}
+
+button{
   
-  mat-card{
-    box-shadow: 0 4px 24px 0 rgba(62, 57, 107, 0.18);
-    border-radius: 10px;
-    border: none;
-  }
-  .attandance{
-    height: 220px;
-    box-shadow: 0 4px 24px 0 rgba(62, 57, 107, 0.18);
-    border-radius: 10px;
-    border: none;
-    margin-bottom: 28px;
-    padding: 30px;
-    span{
-        font-size: 18px;
-        font-weight: 500;
-    }
-    .clock-btn{
-        padding: 9px;
-        width: 118px;
-    }
-  }
-  .schedule{
-    height: 490px;
-    box-shadow: 0 4px 24px 0 rgba(62, 57, 107, 0.18);
-    border-radius: 10px;
-    border: none;
-    span{
-      font-size: 18px;
-      font-weight: 500;
-  }
-  }
+}

@@ -40,11 +40,12 @@
       align-items: center;
       justify-content: left;
       height: 52px;
-      margin:10px 0px 10px
-    }
-    .side-section:hover {
-      background-color: #912b87;
-      color: #ffffff;
+      margin: 10px 0px 10px;
+
+      &:hover {
+        background-color: #912b87;
+        color: #ffffff;
+      }
     }
     h2 {
       margin: 0;
@@ -52,6 +53,33 @@
     .accordion-button {
       margin: 0;
       padding: 0;
+    }
+    .collapse .side-cell {
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      height: 35px;
+      margin: 10px 0px 10px;
+      .circle-icon {
+        width: 10px;
+        height: 10px;
+        margin: 0px 20px 0px 15px;
+        border-radius: 50%;
+        border-top: 3px solid #912b87;
+        transition: all 0.3s ease-in-out;
+      }
+      &:hover {
+        color: #912b87;
+        font-weight: 600;
+        .circle-icon {
+          transform: rotate(180deg);
+        }
+      }
     }
   }
 
@@ -61,10 +89,10 @@
     .header {
       .header-left {
         i {
-            color: #912b87;
-            margin: 0px 20px 0px 5px;
-            font-size: 19px;
-          }
+          color: #912b87;
+          margin: 0px 20px 0px 5px;
+          font-size: 19px;
+        }
         .dropdown {
           ul {
             padding: 15px 0px;
@@ -80,12 +108,12 @@
           font-size: 19px;
         }
         .dropdown {
-            ul {
-              padding: 15px 0px;
-              box-shadow: 0 4px 24px 0 rgba(62, 57, 107, 0.18);
-              border: none;
-            }
+          ul {
+            padding: 15px 0px;
+            box-shadow: 0 4px 24px 0 rgba(62, 57, 107, 0.18);
+            border: none;
           }
+        }
         button {
           .badge {
             margin-left: -19px;
@@ -95,12 +123,18 @@
         }
       }
     }
+
+    footer span{
+      font-size: 16px;
+      padding: 15px;
+      color: #666566;
+    }
   }
   .sidebar.collapsed {
     transform: translateX(-100%);
   }
 
-  .content{
-    overflow-x:auto;
+  .content {
+    overflow-x: auto;
   }
 }
