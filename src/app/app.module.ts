@@ -21,6 +21,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { UserAuthComponent } from './user-auth/user-auth.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -44,7 +46,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     RecaptchaModule,
     MatDatepickerModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
     
   ],
   providers: [

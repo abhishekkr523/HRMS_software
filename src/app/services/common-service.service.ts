@@ -7,7 +7,7 @@ import { Observable, Subject, catchError, switchMap, throttleTime, throwError } 
 })
 export class CommonServiceService {
 
-  private apiUrl = 'https://api.example.com/data';
+  private apiUrl = 'http://127.0.0.1:8000/api/student/';
   private dataRequestSubject = new Subject<void>();
 
   constructor(private http: HttpClient) { }
@@ -28,5 +28,15 @@ export class CommonServiceService {
         })
       ))
     );
+
+    // or
+    //  this.http.get(this.apiUrl).subscribe(
+    //   (data) => {
+    //     this.dataRequestSubject.next(data);
+    //   },
+    //   (error) => {
+    //     this.dataRequestSubject.error(error);
+    //   }
+    // );
   }
 }
