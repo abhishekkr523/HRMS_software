@@ -1,0 +1,24 @@
+.students-list {
+    // max-width: 600px;
+    margin: 0px 50px 0px 50px;
+    margin: 0 auto;
+  }
+  
+  .student-item {
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .student-details {
+    font-size: 16px;
+  }
+  
+  .no-data {
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+    color: #666;
+  }
+  

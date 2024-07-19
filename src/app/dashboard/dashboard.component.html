@@ -33,8 +33,14 @@
           class="accordion-collapse collapse"
           data-bs-parent="#accordionExample"
         >
-          <div class="side-cell"><div class="circle-icon"></div>Salary</div>
-          <div class="side-cell"><div class="circle-icon"></div>Payslip</div>
+          <div class="side-cell">
+            <div class="circle-icon"></div>
+            Salary
+          </div>
+          <div class="side-cell">
+            <div class="circle-icon"></div>
+            Payslip
+          </div>
         </div>
       </div>
       <div class="accordion-item bg-transparent" style="border: none">
@@ -56,9 +62,18 @@
           class="accordion-collapse collapse"
           data-bs-parent="#accordionExample"
         >
-          <div class="side-cell"><div class="circle-icon"></div>Time Sheet</div>
-          <div class="side-cell"><div class="circle-icon"></div>Manage Leave</div>
-          <div class="side-cell"><div class="circle-icon"></div>Attendence</div>
+          <div class="side-cell">
+            <div class="circle-icon"></div>
+            Time Sheet
+          </div>
+          <div class="side-cell">
+            <div class="circle-icon"></div>
+            Manage Leave
+          </div>
+          <div class="side-cell">
+            <div class="circle-icon"></div>
+            Attendence
+          </div>
         </div>
       </div>
       <div class="accordion-item bg-transparent" style="border: none">
@@ -80,16 +95,46 @@
           class="accordion-collapse collapse"
           data-bs-parent="#accordionExample"
         >
-          <div class="side-cell" routerLink=""><div class="circle-icon"></div>Award</div>
-          <div class="side-cell" routerLink=""><div class="circle-icon"></div>Transfer</div>
-          <div class="side-cell" routerLink=""><div class="circle-icon"></div>Registration</div>
-          <div class="side-cell" routerLink=""><div class="circle-icon"></div>Trip</div>
-          <div class="side-cell" routerLink=""><div class="circle-icon"></div>Promotion</div>
-          <div class="side-cell" routerLink=""><div class="circle-icon"></div>Warning</div>
-          <div class="side-cell" routerLink=""><div class="circle-icon"></div>complaints</div>
-          <div class="side-cell" routerLink=""><div class="circle-icon"></div>Termination</div>
-          <div class="side-cell" routerLink=""><div class="circle-icon"></div>Announcement</div>
-          <div class="side-cell" routerLink=""><div class="circle-icon"></div>Holiday</div>
+          <div class="side-cell" routerLink="">
+            <div class="circle-icon"></div>
+            Award
+          </div>
+          <div class="side-cell" routerLink="">
+            <div class="circle-icon"></div>
+            Transfer
+          </div>
+          <div class="side-cell" routerLink="">
+            <div class="circle-icon"></div>
+            Registration
+          </div>
+          <div class="side-cell" routerLink="">
+            <div class="circle-icon"></div>
+            Trip
+          </div>
+          <div class="side-cell" routerLink="">
+            <div class="circle-icon"></div>
+            Promotion
+          </div>
+          <div class="side-cell" routerLink="">
+            <div class="circle-icon"></div>
+            Warning
+          </div>
+          <div class="side-cell" routerLink="">
+            <div class="circle-icon"></div>
+            complaints
+          </div>
+          <div class="side-cell" routerLink="">
+            <div class="circle-icon"></div>
+            Termination
+          </div>
+          <div class="side-cell" routerLink="">
+            <div class="circle-icon"></div>
+            Announcement
+          </div>
+          <div class="side-cell" routerLink="">
+            <div class="circle-icon"></div>
+            Holiday
+          </div>
         </div>
       </div>
     </div>
@@ -171,15 +216,25 @@
             <span class="visually-hidden">unread messages</span>
           </span>
         </button>
-        <div class="d-flex align-items-center justify-content-center" style="background-color: rgb(241, 239, 239);; border-radius: 5px;">
+        <div
+          class="d-flex align-items-center justify-content-center"
+          style="background-color: rgb(241, 239, 239); border-radius: 5px"
+        >
           <span
             ><i
               class="fa-solid fa-globe header-icon"
               style="color: rgb(199, 196, 196)"
             ></i
           ></span>
-          <select class="form-select" style="box-shadow:none;
-            border: none; background-color: transparent;" aria-label="Default select example">
+          <select
+            class="form-select"
+            style="
+              box-shadow: none;
+              border: none;
+              background-color: transparent;
+            "
+            aria-label="Default select example"
+          >
             <option selected>English</option>
             <option value="1">Arabic</option>
             <option value="2">Chinese</option>
@@ -190,8 +245,13 @@
     </div>
     <div class="pages">
       <router-outlet></router-outlet>
-      <footer> <span>HRMS | Quecto Systems Private Limited</span></footer>
-     
+
+      <button (click)="handleClick($event)">Click me</button>
+      <app-scheduler></app-scheduler>
+      <app-reactive-form></app-reactive-form>
+      <app-rate-limit-throttle></app-rate-limit-throttle>
+
+      <footer><span>HRMS | Quecto Systems Private Limited</span></footer>
     </div>
   </div>
 </div>

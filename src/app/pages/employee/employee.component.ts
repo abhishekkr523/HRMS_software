@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { catchError, concatMap, delay, filter, from, interval, map, mergeMap, of, retry, retryWhen, switchMap, take, throwError } from 'rxjs';
+import { CommonServiceService } from '../../services/common-service.service';
 
 @Component({
   selector: 'app-employee',
@@ -18,6 +19,13 @@ export class EmployeeComponent  implements OnInit{
   retryWhenResult: any[] = [];
   onErrorResumeNextResult: any[] = [];
 
+
+  result:any;
+  constructor(private srv: CommonServiceService) {
+    this.srv.studentsSubject.subscribe(value=>{
+      this.result=value
+    })
+  }
   ngOnInit(): void {
     this.demoMapOperator();
     this.demoFilterOperator();

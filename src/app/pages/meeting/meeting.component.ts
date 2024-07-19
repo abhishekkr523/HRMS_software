@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { catchError, map, of, retry, throwError } from 'rxjs';
+import { CommonServiceService } from '../../services/common-service.service';
 
 @Component({
   selector: 'app-meeting',
@@ -7,9 +8,23 @@ import { catchError, map, of, retry, throwError } from 'rxjs';
   styleUrl: './meeting.component.scss'
 })
 export class MeetingComponent implements OnInit{
-  constructor() {}
+  result:any
+  constructor(private srv:CommonServiceService) {}
 
   ngOnInit() {
+
+    this.srv.studentsSubject.subscribe(
+      res => {
+        this.result = res;
+        console.log("kkk",res)
+      },
+      error => {
+        console.error('Errorrrr:', error);
+      }
+    );
+
+    // Optionally, you can fetch the students to ensure the BehaviorSubject is populated
+    // this.srv.fetchStudents();
     // Example observable with potential errors
     const numbers$ = of(1, 2, 3, 4, 5).pipe(
       // Simulate an error

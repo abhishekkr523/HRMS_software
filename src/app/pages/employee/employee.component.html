@@ -1,4 +1,20 @@
-<!-- src/app/rxjs-demo/rxjs-demo.component.html -->
+<div class="students-list">
+  <h2>Students List</h2>
+  <div *ngIf="result && result.length > 0">
+    <div class="student-item" *ngFor="let student of result">
+      <div class="student-details">
+        <p><strong>ID:</strong> {{ student.id }}</p>
+        <p><strong>Name:</strong> {{ student.name }}</p>
+        <p><strong>City:</strong> {{ student.city }}</p>
+        <p><strong>Fees:</strong> {{ student.fees | currency:'USD':'symbol':'1.2-2' }}</p>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="result && result.length === 0" class="no-data">
+    <p>No students found.</p>
+  </div>
+</div>
+
 
 <div>
     <h2>RxJS Operator Demos</h2>

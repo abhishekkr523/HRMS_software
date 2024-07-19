@@ -11,6 +11,8 @@ import { MessengerComponent } from './pages/messenger/messenger.component';
 import { TicketComponent } from './pages/ticket/ticket.component';
 import { ZoomMeetingComponent } from './pages/zoom-meeting/zoom-meeting.component';
 import { UserAuthComponent } from './user-auth/user-auth.component';
+import { TimeSheetComponent } from './modules/timesheet/time-sheet/time-sheet.component';
+import { AttendenceComponent } from './attendence/attendence.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/user-auth', pathMatch: 'full' },
@@ -30,6 +32,8 @@ const routes: Routes = [
       { path: 'messenger', component: MessengerComponent },
       { path: 'ticket', component:TicketComponent  },
       { path: 'zoom-meeting', component: ZoomMeetingComponent },
+      {path:'timesheet', component:TimeSheetComponent},
+      {path:"attendence", component:AttendenceComponent}
     ],
   },
 ];
